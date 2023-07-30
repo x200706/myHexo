@@ -75,3 +75,4 @@ valine:
     investor:
       # - hash of investor1@email.com
 # image_server: "https://source.unsplash.com/1600x900/?snow"
+images: images
