@@ -78,7 +78,7 @@ reward:
   enable: false
 audio:
   - name: "【歌ってみた】第三の心臓 / covered by ヰ世界情緒"
-    url: "https://www.youtube.com/watch?v=lHvpJenkKfs"
+    url: "https://www.youtube.com/embed/lHvpJenkKfs"
     artist: "ヰ世界情緒"
     cover: ""
     lrc: ""
