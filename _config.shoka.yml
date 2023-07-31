@@ -52,7 +52,7 @@ valine:
   lang: zh-CN
   visitor: true # 文章访问量统计
   comment_count: true
-  NoRecordIP: ture # 不记录 IP
+  NoRecordIP: false # 不记录 IP
   serverURLs: https://sxmmhyii.api.lncldglobal.com
   powerMode: true # 默认打开评论框输入特效
   tagMeta:
