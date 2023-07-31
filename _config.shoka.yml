@@ -2,7 +2,7 @@ alternate: Crystal's Note
 font:
   logo:
     external: true
-    family: Handjet
+    family: Exo 2
     size: 3.5
 darkmode: true
 loader:
