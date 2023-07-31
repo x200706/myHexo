@@ -49,7 +49,7 @@ valine:
   placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
   avatar: mp # Gravatar style : mp, identicon, monsterid, wavatar, robohash, retro
   pageSize: 10 # Pagination size
-  lang: zh-CN
+  lang: zh-TW
   visitor: true # 文章访问量统计
   comment_count: true
   NoRecordIP: false # 不记录 IP
