@@ -64,7 +64,6 @@ valine:
   tagMember:
     master:
       - hash of chi200706@gmail.com
-      # - hash of master2@email.com
     friend:
       # - hash of friend@email.com
       # - hash of friend2@email.com
