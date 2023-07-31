@@ -28,10 +28,6 @@ menu:
   # friends: /friends/ || heart
   # links: /links/ || magic
 
-# themes/shoka/source/images/***
-favicon:
-  apple_touch_icon: fox.png
-
 social:
   github: https://github.com/x200706 || github || "#ffffff"
   mastodon: https://liker.social/@chi200706 || person || "#ffffff"
