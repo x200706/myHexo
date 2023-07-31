@@ -2,7 +2,7 @@ alternate: Crystal's Note
 font:
   logo:
     external: true
-    family: Exo 2
+    family: Mulish
     size: 3.5
 darkmode: true
 loader:
