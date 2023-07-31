@@ -34,7 +34,7 @@ favicon:
 
 social:
   github: https://github.com/x200706 || github || "#ffffff"
-  # mastodon: https://liker.social/@chi200706 || mastodon || "#ffffff"
+  mastodon: https://liker.social/@chi200706 || person || "#ffffff"
 
 sidebar:
   # Sidebar Position.
