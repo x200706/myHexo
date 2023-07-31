@@ -28,8 +28,8 @@ favicon:
   apple_touch_icon: /apple-touch-icon.png
 
 social:
-  github: https://github.com/x200706 || github || "#191717"
-  mastodon: https://liker.social/@chi200706 || mastodon || "#191717"
+  github: https://github.com/x200706 || github || "#ffffff"
+  # mastodon: https://liker.social/@chi200706 || mastodon || "#ffffff"
 
 sidebar:
   # Sidebar Position.
