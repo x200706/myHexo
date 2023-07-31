@@ -190,6 +190,3 @@ feed:
         enable: true
         template: "themes/shoka/layout/_alternate/json.ejs"
         output: "feed.json"
-reward:
-  # If true, reward will be displayed in every article by default.
-  enable: false
