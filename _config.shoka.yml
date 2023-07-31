@@ -26,22 +26,11 @@ menu:
 # themes/shoka/source/images/***
 favicon:
   apple_touch_icon: /apple-touch-icon.png
-  
+
 social:
-  github: https://github.com/yourname || github || "#191717"
-  #google: https://plus.google.com/yourname || google
-  # twitter: https://twitter.com/yourname || twitter || "#00aff0"
-  # zhihu: https://www.zhihu.com/people/yourname || zhihu || "#1e88e5"
-  # music: https://music.163.com/#/user/home?id=yourid || cloud-music || "#e60026"
-  # weibo: https://weibo.com/yourname || weibo || "#ea716e"
-  # about: https://about.me/yourname || address-card || "#3b5998"
-  #email: mailto:yourname@mail.com || envelope || "#55acd5"
-  #facebook: https://www.facebook.com/yourname || facebook
-  #stackoverflow: https://stackoverflow.com/yourname || stack-overflow
-  #youtube: https://youtube.com/yourname || youtube
-  #instagram: https://instagram.com/yourname || instagram
-  #skype: skype:yourname?call|chat || skype
-  #douban: https://www.douban.com/people/yourname/ || douban
+  github: https://github.com/x200706 || github || "#191717"
+  mastodon: https://liker.social/@chi200706 || mastodon || "#191717"
+
 sidebar:
   # Sidebar Position.
   position: left
