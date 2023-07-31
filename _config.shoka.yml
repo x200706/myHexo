@@ -58,11 +58,9 @@ valine:
     visitor: 訪客
     master: 站長
     friend: 友列
-    # investor: 金主粑粑
   tagColor:
     master: "var(--color-orange)"
     friend: "var(--color-aqua)"
-    # investor: "var(--color-pink)"
   tagMember:
     master:
       - hash of chi200706@gmail.com
@@ -70,8 +68,6 @@ valine:
     friend:
       # - hash of friend@email.com
       # - hash of friend2@email.com
-    # investor:
-      # - hash of investor1@email.com
 # image_server: "https://source.unsplash.com/1600x900/?snow"
 reward:
   # If true, reward will be displayed in every article by default.
