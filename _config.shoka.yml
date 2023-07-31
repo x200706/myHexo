@@ -36,7 +36,7 @@ sidebar:
   position: left
   #position: right
   # Replace the default avatar image and set the url here.
-  avatar: whiteli.jpg
+  avatar: fan.jpg
 widgets:
   random_posts: true # 显示随机文章
   recent_comments: true # 显示最近评论
