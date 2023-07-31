@@ -1,4 +1,9 @@
 alternate: Crystal's Note
+font:
+  logo:
+    external: true
+    family: Mulish
+    size: 3.5
 darkmode: true
 loader:
   start: true 
