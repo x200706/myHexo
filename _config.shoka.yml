@@ -40,6 +40,8 @@ sidebar:
 widgets:
   random_posts: true # 显示随机文章
   recent_comments: true # 显示最近评论
+leancloud_visitors:
+  enable: false
 valine:
   appId: sXmMHyiITZk5sRXNXGWkkvFA-MdYXbMMI
   appKey: BlbX0DIYKZ9EjUiMv3raoowa
@@ -48,6 +50,7 @@ valine:
   pageSize: 10 # Pagination size
   lang: zh-CN
   visitor: true # 文章访问量统计
+  comment_count: true
   NoRecordIP: false # 不记录 IP
   serverURLs: https://sxmmhyii.api.lncldglobal.com
   powerMode: true # 默认打开评论框输入特效
