@@ -23,6 +23,10 @@ menu:
   # friends: /friends/ || heart
   # links: /links/ || magic
 
+# themes/shoka/source/images/***
+favicon:
+  apple_touch_icon: /apple-touch-icon.png
+  
 social:
   github: https://github.com/yourname || github || "#191717"
   #google: https://plus.google.com/yourname || google
