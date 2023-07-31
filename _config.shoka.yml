@@ -2,7 +2,7 @@ alternate: Crystal's Note
 font:
   logo:
     external: true
-    family: Mulish
+    family: Nova Slim
     size: 3.5
 darkmode: true
 loader:
