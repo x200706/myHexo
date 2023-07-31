@@ -71,3 +71,9 @@ valine:
 reward:
   # If true, reward will be displayed in every article by default.
   enable: false
+audio:
+  - name: "【歌ってみた】第三の心臓 / covered by ヰ世界情緒"
+    url: "https://www.youtube.com/watch?v=lHvpJenkKfs"
+    artist: "ヰ世界情緒"
+    cover: ""
+    lrc: ""
