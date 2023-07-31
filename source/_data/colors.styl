@@ -1,0 +1,11 @@
+:root {
+  --color-pink: #B7BAF1;
+  --color-orange: #A6C8FF;
+}
+
+[data-theme="dark"] {
+  &:root {
+    --color-pink: alpha(lighten(#B7BAF1, 20%), .8);
+    --color-orange: alpha(lighten(#A6C8FF, 20%), .8);
+  }
+}
