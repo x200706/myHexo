@@ -29,8 +29,8 @@ menu:
   # links: /links/ || magic
 
 # themes/shoka/source/images/***
-# favicon:
-#   apple_touch_icon: /apple-touch-icon.png
+favicon:
+  apple_touch_icon: fox.png
 
 social:
   github: https://github.com/x200706 || github || "#ffffff"
