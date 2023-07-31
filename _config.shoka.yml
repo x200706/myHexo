@@ -65,7 +65,7 @@ valine:
     # investor: "var(--color-pink)"
   tagMember:
     master:
-      # - hash of master@email.com
+      - hash of chi200706@gmail.com
       # - hash of master2@email.com
     friend:
       # - hash of friend@email.com
