@@ -20,7 +20,6 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tag", widget: "list" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Top", name: "sticky", widget: "boolean" }
       - { label: "Update Date", name: "updated", widget: "datetime", required: false}
       - { label: "Categories", name: "categories", widget: "list", required: false}
       - { label: "Cover Image", name: "cover", widget: "string", required: false}
