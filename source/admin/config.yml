@@ -19,8 +19,8 @@ collections:
       - { label: "Top", name: "sticky", widget: "boolean" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Update Date", name: "updated", widget: "datetime" }
+      - { label: "Update Date", name: "updated", widget: "datetime", default: ""}
       - { label: "Tags", name: "tag", widget: "string" }
-      - { label: "Categories", name: "categories", widget: "string" }
-      - { label: "Cover Image", name: "cover", widget: "string" }
+      - { label: "Categories", name: "categories", widget: "string", default: ""}
+      - { label: "Cover Image", name: "cover", widget: "string", default: ""}
       - { label: "Body", name: "body", widget: "markdown" }
