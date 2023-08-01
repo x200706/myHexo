@@ -18,4 +18,5 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tag", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
