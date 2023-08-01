@@ -160,11 +160,12 @@ autoprefixer:
   exclude:
     - '*.min.css'
 algolia:
-  appId: #Your appId
-  apiKey: #Your apiKey
-  adminApiKey: #Your adminApiKey
+  appId: C3CUOWKGBC
+  applicationID: C3CUOWKGBC
+  apiKey: cd2d8253e7473eca2c475bb83ce64833
+  adminApiKey: 5333423f5733469bc9adcf2cdab7b875
   chunkSize: 5000
-  indexName: #"shoka"
+  indexName: hexo
   fields:
     - title #必须配置
     - path #必须配置
