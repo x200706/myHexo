@@ -6,7 +6,7 @@ font:
     size: 3.5
 darkmode: true
 loader:
-  start: true 
+  start: false 
   switch: false
 fireworks:
   enable: true # 是否启用
