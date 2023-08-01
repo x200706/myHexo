@@ -22,4 +22,5 @@ collections:
       - { label: "Update Date", name: "updated", widget: "datetime" }
       - { label: "Tags", name: "tag", widget: "string" }
       - { label: "Categories", name: "categories", widget: "string" }
+      - { label: "Cover Image", name: "cover", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
