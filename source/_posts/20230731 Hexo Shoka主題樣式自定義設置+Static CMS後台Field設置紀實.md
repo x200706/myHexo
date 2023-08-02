@@ -26,6 +26,8 @@ image_server: "https://source.unsplash.com/1600x900/?snow"
 
 ### 抽換圖片
 >透過yml抽換Avatar頭圖，作者說得蠻詳細，在此跳過
+
+
 在source/_data下新增目錄images，把跟原作者主題儲藏庫下方source/images同名同副檔名的圖片加入到這個新建的目錄，它就會蓋掉預設，以下是我改過的部分
 
 |檔名|功能|
@@ -88,6 +90,8 @@ cover: https://i.imgur.com/8ZlAuRL.png
 交叉試了很久，直接說結論
 1. 全站不能只有一篇文章時還設置頂
 2. 置頂不能填false
+
+
 所以我不建議在後台加入Sticky的Boolean Filed
 
 接著我們要了解Hexo分類跟標籤的特性—可以帶yml list，但同樣寫法意義不同

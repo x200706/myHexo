@@ -58,11 +58,11 @@ backend:
 - [這篇也是](https://hexo.fluid-dev.com/posts/hexo-netlify/)
 
 ### 怒換後台為Static CMS
-然而好不容易讓後台可以登入使用了，我發現中文輸入游標會亂跑，完全無法打字，後來發現是現行Decap CMS一個長期未修的bug，其源頭是Slate JS某版出現了Bug（[像Grafana有陣子也因此出現這個bug](https://github.com/grafana/grafana/issues/54942)），根據[討論](https://github.com/decaporg/decap-cms/issues/6287)加了CSS樣是強蓋也毫無作用，這樣怎麼用啦= =...
+然而好不容易讓後台可以登入使用了，我發現中文輸入游標會亂跑，完全無法打字，後來發現是現行Decap CMS一個長期未修的bug，其源頭是Slate JS某版出現了Bug（[像Grafana有陣子也因此出現這個bug](https://github.com/grafana/grafana/issues/54942)），根據[討論](https://github.com/decaporg/decap-cms/issues/6287)加了CSS樣式強蓋也毫無作用，這樣怎麼用啦= =...
 
 很苦惱哇...後來看到[這篇文章](https://vrabe.tw/blog/continuation-of-netlify-cms)提到可以抽換為Static CMS，就能進行中文輸入了
 
-以下是抽換完的source/admin/index.html
+以下是抽換完的source/admin/index.html（head那個樣式表記得加，不然頁面會爛掉www）
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -94,4 +94,4 @@ locale: "zh_Hant"
 
 ***
 ### 結語
-到目前為止，訪問你的https://專案名稱.netlify.app/應該就能看到你的Hexo還有預設的主題了，但這似乎只是開始...因為主題安裝可能也是個大坑;w;，下一篇再繼續解說
+到目前為止，訪問你的https://專案名稱.netlify.app/應該就能看到你的Hexo還有預設的主題了，但這似乎只是開始...因為主題安裝可能也是個大坑`;w;，下一篇再繼續解說
