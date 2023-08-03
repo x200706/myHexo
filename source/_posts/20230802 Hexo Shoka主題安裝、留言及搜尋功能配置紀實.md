@@ -48,6 +48,7 @@ cover:
 
 #### 三、沒有物件
 還是一直卡在載入中嗎？發第一篇留言在LeanCloud產生Comment物件（不喜歡留言再去DB刪掉），重新整理世界就恢復和平了ˇWˇ...
+>更正：其實照著上方[推薦的文章](https://gardencavy.site/course/blog/blog01/)先在DB建立Comment物件再開始使用留言板即可
 
 ### 搜尋功能配置
 [這教學寫的不錯](https://shoka.vercel.app/Algolia.html)，還有教你怎麼建立權限更高的API+在本機初始化索引，[這篇也不錯](https://brooke2010.github.io/2020/03/04/hexo-search-use-Algolia/)

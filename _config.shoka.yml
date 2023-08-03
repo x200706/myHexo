@@ -55,7 +55,6 @@ valine:
   NoRecordIP: false # 不记录 IP
   serverURLs: https://sxmmhyii.api.lncldglobal.com
   powerMode: true # 默认打开评论框输入特效
-  requiredFields: ['nick']
   tagMeta:
     visitor: 訪客
     master: 站長
@@ -65,7 +64,7 @@ valine:
     friend: "var(--color-aqua)"
   tagMember:
     master:
-      - hash of chi200706@gmail.com
+      - 1d491b58d30e35ade2a5e6272e5ffbf8
     friend:
       # - hash of friend@email.com
       # - hash of friend2@email.com
