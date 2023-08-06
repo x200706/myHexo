@@ -7,6 +7,7 @@ tag:
   - date
   - Django Admin
   - DRF Serializer
+  - Django Model Field
 updated: 2023-08-06T19:49:55.979
 categories:
   - Django
