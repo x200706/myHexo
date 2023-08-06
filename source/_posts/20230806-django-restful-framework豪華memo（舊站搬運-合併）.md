@@ -7,7 +7,7 @@ updated: 2023-08-06T20:36:12.297
 categories:
   - Django
 ---
-### 最初的專案（20230606）
+## 最初的專案（20230606）
 
 ### 閱讀文章
 
@@ -173,9 +173,7 @@ from myapp import views as user_view
 進到GET方法，輸出：
 
 ```
-
 []
-
 ```
 
 因為還沒存入任何東西xd
@@ -189,75 +187,49 @@ from myapp import views as user_view
 上行帶剛剛的欄位：
 
 ```json
-
 {
-
     "user_name":"kiki",
-
     "password":"mima",
-
     "name":"kiki chen"
-
 }
-
 ```
 
 送出！同時這支API會顯示剛剛輸入的Data
 
 ```json
-
 {
-
     "user_name":"kiki",
-
     "password":"mima",
-
     "name":"kiki chen"
-
 }
-
 ```
 
 再去一次GET方法 http://127.0.0.1:8000/users（或加進Postman測試），我們會看到：
 
 ```json
-
 [
-
     {
-
         "user_name": "kiki",
-
         "password": "mima",
-
         "name": "kiki chen"
-
     }
-
 ]
-
 ```
-
 ---
-
 ### 其他or疑難雜症
-
 ### ⭐存檔馬上變！
 
 跟Java Web不太一樣，存檔就會馬上生效
 
 ### ⭐PyCharm亂抖紅線`=_=╬`
-
 > Unresolved reference
 
 [解法](https://blog.51cto.com/u_15127558/4519981)
 
 ---
 
-### 序列化器（20230607）
-
+## 序列化器（20230607）
 ### 前言
-
 - DRF是啥
   - DRF = Django RESTful Framework
   - [官方網站](https://www.django-rest-framework.org/)
@@ -269,195 +241,104 @@ from myapp import views as user_view
 > 20230612更新：因為我發現以前收藏的[大江狗](https://pythondjango.cn/django/rest-framework/1-RESTfull-API-why-DRF/)...超會教！！超有自信！！所以決定—
 
 ### 跟著大江狗學序列化跟DRF
-
 ### ⭐Python內建的序列化
-
 ```py
-
 a = 1
-
 json.dump({"num": a}) # 這效果感覺跟JS的JSON物件有點像
-
 ```
-
 輸出的JSON字串內容
-
 ```json
-
 {"num": 1}
-
 ```
-
 Django的序列化方法先略過
 
 ### ⭐⭐對比：DRF的序列化
-
 - [以博客为例使用DRF的序列化器和基于函数的视图开发API](https://pythondjango.cn/django/rest-framework/2-first-blog-API/)
 
 ---
 
 #### 其他資料
-
 - 今年四月收藏的[django-rest-framework-tutorial](https://github.com/twtrubiks/django-rest-framework-tutorial)也是很好的手把手教學
 
 ---
-
-### API狀態碼初步處理（20230608）
+## API狀態碼初步處理（20230608）
 
 經過多方研究跟詢問，大概知道如何在`view`替Data外包一層code跟message，還有藉由例外處理打印對應的狀態
 
 ```python
-
 from django.http import JsonResponse
-
 from django.db import transaction
-
 from rest_framework.generics import GenericAPIView
-
 from myapp.serializers import UserSerializer
-
 from myapp.models import User
 
-
-
-
-
-
-
-
-
 class UsersView(GenericAPIView):
-
     queryset = User.objects.all()
-
     serializer_class = UserSerializer
 
-
-
-
-
     def get(self, request, *args, **kwargs):
-
         users = self.get_queryset()
-
         serializer = self.serializer_class(users, many=True)
-
         data = serializer.data
-
         response_data = {
-
             "message": "Success",
-
             "code": "SUCCESS,
-
             "data": data
-
         }
-
         return JsonResponse(response_data, safe=False)
 
-
-
-
-
     def post(self, request, *args, **kwargs):
-
         data = request.data
-
         try:
-
             serializer = self.serializer_class(data=data)
-
             serializer.is_valid(raise_exception=True)
-
             with transaction.atomic():
-
                 serializer.save()
-
             data = serializer.data
-
             response_data = {
-
                 "message": "Success",
-
                 "code": "SUCCESS",
-
                 "data": data
-
             }
 
         except Exception as e:
-
             response_data = {
-
                 "message": "Something throw a exception.",
-
                 "code": "SOME_EXCEPTION",
-
                 "error": str(e) # 不過比起這樣打印，我比較想記入日誌就好
-
             }
-
         return JsonResponse(response_data)
-
-
-
-
-
 ```
 
 打GET方法輸出：
 
 ```json
-
 {
-
     "message": "Success",
-
     "code": "SUCCESS",
-
     "data": [
-
         {
-
             "user_name": "kiki",
-
             "password": "mima",
-
             "name": "kiki chen"
-
         },
-
         {
-
             "user_name": "kiki2",
-
             "password": "mima",
-
             "name": "kiki chen"
-
         }
-
     ]
-
 }
-
 ```
 
 打POST方法但製造一個例外：
 
 ```json
-
 {
-
     "message": "Something throw a exception.",
-
     "code": "SOME_EXCEPTION",
-
     "error": "{'user_name': [ErrorDetail(string='user with this user name already exists.', code='unique')], 'name': [ErrorDetail(string='This field is required.', code='required')]}"
-
 }
-
 ```
 
 ---
@@ -470,8 +351,7 @@ class UsersView(GenericAPIView):
 
 ---
 
-### DB ORM（20230723）
-
+## DB ORM（20230723）
 - [models ID自增](https://blog.csdn.net/diyiday/article/details/106002519)
 - [models 欄位非必填](https://blog.csdn.net/u012798683/article/details/104713062)
 - [時間與快樂(?) Model欄位類型介紹(上) 江狗(Django) 鐵人Day20](https://ithelp.ithome.com.tw/articles/10302021)
@@ -481,8 +361,7 @@ class UsersView(GenericAPIView):
 
 ---
 
-### .gitignore乾貨（20230722）
-
+## .gitignore乾貨（20230722）
 起因是因為從GitHub import進Replit的Django專案想推版了，但沒寫`.gitignore`，看到旁邊清單一萬塊兩萬個檔案，呃...當然不行r
 
 一開始是參考[這篇](https://www.jianshu.com/p/13612fb4b224)寫（說實話又學到不少0.0），但寫到一半發現還有八千多個檔案擋不掉Orz
@@ -493,242 +372,98 @@ class UsersView(GenericAPIView):
 
 ---
 
-### Replit配置相關：如何在Replit運行從Github import的Django專案（20230629）
-
+## Replit配置相關：如何在Replit運行從Github import的Django專案（20230629）
 ### 一、修改按下run的操作行為
-
 #### （一）[官方教學](https://blog.replit.com/deploying-django)，快狠準QQ
-
 #### （二）我的做法，改`.replit`設定檔
-
 在檔案搜尋框輸入.，找到一個叫`.replit`的檔案，貼上這個設定檔**（基底來自Replit官方的Django範本）**，須注意由於我的`manage.py`在FirstProject的目錄下方，所以path才這樣設置，不然正常應該第二個字串帶`manage.py`就好
 
 ```python
-
 # The command that runs the program.
-
 run = ["python3", "FirstProject/manage.py", "runserver", "0.0.0.0:3000"]
-
 # The primary language of the repl. There can be others, though!
-
 language = "python3"
-
 # The main file, which will be shown by default in the editor.
-
 entrypoint = "FirstProject/manage.py"
-
 # A list of globs that specify which files and directories should
-
 # be hidden in the workspace.
-
 hidden = ["venv", ".config", "**/__pycache__", "**/.mypy_cache", "**/*.pyc"]
-
-
-
-
-
 # Specifies which nix channel to use when building the environment.
-
 [nix]
-
 channel = "stable-21_11"
-
-
-
-
-
 # Per-language configuration: python3
-
 [languages.python3]
-
 # Treats all files that end with `.py` as Python.
-
 pattern = "**/*.py"
-
 # Tells the workspace editor to syntax-highlight these files as
-
 # Python.
-
 syntax = "python"
-
-
-
-
-
   # The command needed to start the Language Server Protocol. For
-
   # linting and formatting.
-
   [languages.python3.languageServer]
-
   start = ["pyls"]
-
-
-
-
-
 # The environment variables needed to correctly start Python and use the
-
 # package proxy.
-
 [env]
-
 VIRTUAL_ENV = "/home/runner/${REPL_SLUG}/venv"
-
 PATH = "${VIRTUAL_ENV}/bin"
-
 PYTHONPATH="${VIRTUAL_ENV}/lib/python3.8/site-packages"
-
 REPLIT_POETRY_PYPI_REPOSITORY="https://package-proxy.replit.com/pypi/"
-
 MPLBACKEND="TkAgg"
-
-
-
-
-
 # Enable unit tests. This is only supported for a few languages.
-
 [unitTest]
-
 language = "python3"
-
-
-
-
-
 # Add a debugger!
-
 [debugger]
-
 support = true
-
-
-
-
-
   # How to start the debugger.
-
   [debugger.interactive]
-
   transport = "localhost:0"
-
   startCommand = ["dap-python", "main.py"]
-
-
-
-
-
     # How to communicate with the debugger.
-
     [debugger.interactive.integratedAdapter]
-
     dapTcpAddress = "localhost:0"
-
-
-
-
-
     # How to tell the debugger to start a debugging session.
-
     [debugger.interactive.initializeMessage]
-
     command = "initialize"
-
     type = "request"
-
-
-
-
-
       [debugger.interactive.initializeMessage.arguments]
-
       adapterID = "debugpy"
-
       clientID = "replit"
-
       clientName = "replit.com"
-
       columnsStartAt1 = true
-
       linesStartAt1 = true
-
       locale = "en-us"
-
       pathFormat = "path"
-
       supportsInvalidatedEvent = true
-
       supportsProgressReporting = true
-
       supportsRunInTerminalRequest = true
-
       supportsVariablePaging = true
-
       supportsVariableType = true
-
-
-
-
-
     # How to tell the debugger to start the debuggee application.
-
     [debugger.interactive.launchMessage]
-
     command = "attach"
-
     type = "request"
-
-
-
-
-
       [debugger.interactive.launchMessage.arguments]
-
       logging = {}
-
-
-
-
-
 # Configures the packager.
-
 [packager]
-
 # Search packages in PyPI.
-
 language = "python3"
-
 # Never attempt to install `unit_tests`. If there are packages that are being
-
 # guessed wrongly, add them here.
-
 ignoredPackages = ["unit_tests"]
-
-
-
-
-
   [packager.features]
-
   enabledForHosting = false
-
   # Enable searching packages from the sidebar.
-
   packageSearch = true
-
   # Enable guessing what packages are needed from the code.
-
   guessImports = true
-
 ```
 
 可以看到它改寫了run按鈕的行為，也可以寫成
-
 ```py
-
 run = "python FirstProject/manage.py runserver 0.0.0.0:3000"
-
 ```
 
 [寫法出處](https://replit.com/talk/ask/Imported-a-django-web-app-from-github-and-the-server-runs-but-cant-connect-in-browser-window/119598)
@@ -740,9 +475,7 @@ run = "python FirstProject/manage.py runserver 0.0.0.0:3000"
 像我的要這樣寫：
 
 ```py
-
 ALLOWED_HOSTS = ['ourdrf.chi200706.repl.co']
-
 ```
 
 ---
@@ -752,28 +485,22 @@ ALLOWED_HOSTS = ['ourdrf.chi200706.repl.co']
 用Replit的Django範本生成之專案，因為`setting.py`中SECRET_KEY的部分被寫成這樣：
 
 ```py
-
 SECRET_KEY = os.getenv('SECRET_KEY')
-
 ```
 
 所以要切到Tools->Secrets下方新增key，產生方法有寫在範本建立之初的`README.md`
 
 ```shell
-
 python # 進python
-
 import secrets # 引進secrets 
-
 secrets.token_urlsafe(32) # 產生token
-
 ```
 
 其實平常推Django專案可能不小心暴露SECRET_KEY，這個範本做了很好的示範，多學到了！
 
 ---
 
-### DRF例外Handler（20230608）
+## DRF例外Handler（20230608）
 
 ### 閱讀資料
 
