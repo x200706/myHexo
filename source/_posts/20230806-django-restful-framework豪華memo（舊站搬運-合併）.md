@@ -12,12 +12,7 @@ categories:
 ### 閱讀文章
 
 - [專案建置](https://faizc.notion.site/Django-5d4425d61eba4917aa52067e4b1b2790)
-
 - [用 Django REST Framework 撰寫 RESTful API 並生成 Swagger 文檔（上） — 用Django REST Framework 撰寫 RESTful API](https://zoejoyuliao.medium.com/%E7%94%A8-django-rest-framework-%E6%92%B0%E5%AF%AB-restful-api-%E4%B8%A6%E7%94%9F%E6%88%90-swagger-%E6%96%87%E6%AA%94-7cbef7c8e8d6)
-
-
-
-
 
 因為想寫成RESTful風格，所以照下面那篇多裝了：
 
@@ -29,11 +24,7 @@ pip install djangorestframework
 
 `setting.py`的INSTALLED_APPS陣列記得加上`'rest_framework'`
 
-
-
-
-
-***
+---
 
 ### 嘗試集+閱讀重點整理
 
@@ -45,10 +36,6 @@ django-admin startproject Project名稱
 
 ```
 
-
-
-
-
 ### ⭐加一個app
 
 ```shell
@@ -59,10 +46,6 @@ Python manage.py startapp app名稱
 
 ```
 
-
-
-
-
 ### ⭐起服務
 
 ```shell
@@ -72,10 +55,6 @@ Python manage.py startapp app名稱
 python manage.py runserver
 
 ```
-
-
-
-
 
 ### ⭐在SQLite新增一張資料表
 
@@ -113,10 +92,6 @@ python manage.py migrate #執行異動
 
 SQLite的檢視方式筆記（躺在Trello，待整理）
 
-
-
-
-
 `serializers.py`
 
 ```python
@@ -141,27 +116,15 @@ class UserSerializer(serializers.ModelSerializer):
 
 ```
 
-
-
-
-
 `view.py`跟`url`幾乎是拾人（第二篇教學的作者）
 
 牙慧了
 
 #### 問題
 
->ModuleNotFoundError
-
-
-
-
+> ModuleNotFoundError
 
 照著堆疊追蹤最後一行一直解掉就好，通常是多一層少一層的問題，可以好好研究
-
-
-
-
 
 例如下方的代碼
 
@@ -181,10 +144,6 @@ from myapp.models import User
 
 就指package給它..
 
-
-
-
-
 又如下方的代碼
 
 ```python
@@ -203,15 +162,13 @@ from myapp import views as user_view
 
 直接同層給它..
 
-
-
-
-
-***
+---
 
 ### 🎉連線時間><
 
-輸入：http://127.0.0.1:8000/users<br>
+輸入：http://127.0.0.1:8000/users
+
+
 
 進到GET方法，輸出：
 
@@ -223,17 +180,11 @@ from myapp import views as user_view
 
 因為還沒存入任何東西xd
 
+打開Postman新增一個測試，
 
 
-
-
-打開Postman新增一個測試，<br>
 
 選POST方法，Path輸入：http://127.0.0.1:8000/users/
-
-
-
-
 
 上行帶剛剛的欄位：
 
@@ -287,11 +238,7 @@ from myapp import views as user_view
 
 ```
 
-
-
-
-
-***
+---
 
 ### 其他or疑難雜症
 
@@ -299,39 +246,27 @@ from myapp import views as user_view
 
 跟Java Web不太一樣，存檔就會馬上生效
 
-
-
-
-
 ### ⭐PyCharm亂抖紅線`=_=╬`
 
->Unresolved reference
-
-
-
-
+> Unresolved reference
 
 [解法](https://blog.51cto.com/u_15127558/4519981)
 
-***
+---
 
 ### 序列化器（20230607）
 
 ### 前言
 
 - DRF是啥
-
   - DRF = Django RESTful Framework
-
   - [官方網站](https://www.django-rest-framework.org/)
-
 - 話說我覺得我剛開始的學習有點太鑽牛角尖了，先會基本使用就是很棒的一步了，至於底層框架如何運作之後慢慢探索
-
   - 先努力看看能不能**使用**它達成想要的效果即可
 
-***
+---
 
->20230612更新：因為我發現以前收藏的[大江狗](https://pythondjango.cn/django/rest-framework/1-RESTfull-API-why-DRF/)...超會教！！超有自信！！<br>所以決定—
+> 20230612更新：因為我發現以前收藏的[大江狗](https://pythondjango.cn/django/rest-framework/1-RESTfull-API-why-DRF/)...超會教！！超有自信！！所以決定—
 
 ### 跟著大江狗學序列化跟DRF
 
@@ -355,25 +290,17 @@ json.dump({"num": a}) # 這效果感覺跟JS的JSON物件有點像
 
 Django的序列化方法先略過
 
-
-
-
-
 ### ⭐⭐對比：DRF的序列化
 
 - [以博客为例使用DRF的序列化器和基于函数的视图开发API](https://pythondjango.cn/django/rest-framework/2-first-blog-API/)
 
-
-
-
-
-***
+---
 
 #### 其他資料
 
 - 今年四月收藏的[django-rest-framework-tutorial](https://github.com/twtrubiks/django-rest-framework-tutorial)也是很好的手把手教學
 
-***
+---
 
 ### API狀態碼初步處理（20230608）
 
@@ -517,10 +444,6 @@ class UsersView(GenericAPIView):
 
 ```
 
-
-
-
-
 打POST方法但製造一個例外：
 
 ```json
@@ -537,63 +460,38 @@ class UsersView(GenericAPIView):
 
 ```
 
-
-
-
-
-***
+---
 
 ### 小記
 
 但我想想這樣之後app一多，這段程式是不是很重複，而且既然**response_data**是用寫出來的，內容可以不統一，能不能拆處來封裝跟做全域掌控呢，想想想...（不過也要顧慮Python的開發風格）
 
-
-
-
-
 另外日誌紀錄也是蠻重要的......
 
-***
+---
 
-### DB ORM（20230723） 
+### DB ORM（20230723）
 
 - [models ID自增](https://blog.csdn.net/diyiday/article/details/106002519)
-
 - [models 欄位非必填](https://blog.csdn.net/u012798683/article/details/104713062)
-
 - [時間與快樂(?) Model欄位類型介紹(上) 江狗(Django) 鐵人Day20](https://ithelp.ithome.com.tw/articles/10302021)
-
 - [Enum欄位](https://stackoverflow.com/questions/54802616/how-can-one-use-enums-as-a-choice-field-in-a-django-model)
-
   - [案外案](https://stackoverflow.com/questions/12995888/name-is-not-defined)
-
 - [外鍵](https://ithelp.ithome.com.tw/articles/10295389)
 
-***
+---
 
-### .gitignore乾貨（20230722） 
+### .gitignore乾貨（20230722）
 
 起因是因為從GitHub import進Replit的Django專案想推版了，但沒寫`.gitignore`，看到旁邊清單一萬塊兩萬個檔案，呃...當然不行r
 
-
-
-
-
 一開始是參考[這篇](https://www.jianshu.com/p/13612fb4b224)寫（說實話又學到不少0.0），但寫到一半發現還有八千多個檔案擋不掉Orz
-
-
-
-
 
 好吧，後來犯懶了，而且網路上竟然有－[Django .gitignore懶人包！！](https://djangowaves.com/tips-tricks/gitignore-for-a-django-project/)，就直接拿來用啦（喂www），效果超顯著的'w'
 
-
-
-
-
 不過我看到Poetry相關的檔案沒擋掉，看完這篇[討論](https://stackoverflow.com/questions/60725232/what-files-directories-should-i-add-to-gitignore-when-using-poetry-the-python)，得知它是類似Java Maven `pom.xml`的角色~~謎之音：你到昨天那刻為止都還沒發現Django也有套件管理齁~~，為了讓大家都能鎖定相同的依賴版本，當然是要一起推上去的～
 
-***
+---
 
 ### Replit配置相關：如何在Replit運行從Github import的Django專案（20230629）
 
@@ -835,15 +733,7 @@ run = "python FirstProject/manage.py runserver 0.0.0.0:3000"
 
 [寫法出處](https://replit.com/talk/ask/Imported-a-django-web-app-from-github-and-the-server-runs-but-cant-connect-in-browser-window/119598)
 
-
-
-
-
 所以說以後在Replit撰寫或import其他語言的專案，如果不是用範本建立，也可以透過修改設定檔改變按下run▶️符號的行為
-
-
-
-
 
 ### 二、然後還要把API網址加到`setting.py`的[allowed hosts](https://docs.djangoproject.com/en/1.11/ref/settings/#allowed-hosts)中
 
@@ -855,17 +745,9 @@ ALLOWED_HOSTS = ['ourdrf.chi200706.repl.co']
 
 ```
 
+---
 
-
-
-
-***
-
->補充
-
-
-
-
+> 補充
 
 用Replit的Django範本生成之專案，因為`setting.py`中SECRET_KEY的部分被寫成這樣：
 
@@ -889,7 +771,7 @@ secrets.token_urlsafe(32) # 產生token
 
 其實平常推Django專案可能不小心暴露SECRET_KEY，這個範本做了很好的示範，多學到了！
 
-***
+---
 
 ### DRF例外Handler（20230608）
 
@@ -897,24 +779,11 @@ secrets.token_urlsafe(32) # 產生token
 
 功能想像：
 
-
-
-
-
 在view中拋出例外
 
 - [Python Raise an Exception](https://www.w3schools.com/python/gloss_python_raise.asp)
 
-
-
-
-
 被DRF的handler接住
 
 - [官方文件](https://www.django-rest-framework.org/api-guide/exceptions/)
-
   - [網友討論](https://stackoverflow.com/questions/60426446/global-exception-handling-in-django-rest-framework)
-
-
-
-
