@@ -17,9 +17,7 @@ categories:
 因為想寫成RESTful風格，所以照下面那篇多裝了：
 
 ```shell
-
 pip install djangorestframework
-
 ```
 
 `setting.py`的INSTALLED_APPS陣列記得加上`'rest_framework'`
@@ -31,63 +29,40 @@ pip install djangorestframework
 ### ⭐加一個專案
 
 ```shell
-
 django-admin startproject Project名稱
-
 ```
 
 ### ⭐加一個app
 
 ```shell
-
 Python manage.py startapp app名稱
-
 # 建議不要叫app之類的好像會撞=_=
-
 ```
 
 ### ⭐起服務
 
 ```shell
-
 # 要cd到有manage.py這層
-
 python manage.py runserver
-
 ```
 
 ### ⭐在SQLite新增一張資料表
 
 `model.py`
-
 ```python
-
 from django.db import models
-
-
-
-
-
 # Create your models here.
-
 class User(models.Model):
-
     user_name = models.CharField(primary_key=True, max_length=15)
-
     password = models.CharField(max_length=15)
-
     name = models.CharField(max_length=20)
-
 ```
 
 寫完在cmd後執行以下命令
 
 ```shell
-
 python manage.py makemigrations #寫入異動
-
 python manage.py migrate #執行異動
-
 ```
 
 SQLite的檢視方式筆記（躺在Trello，待整理）
@@ -95,25 +70,13 @@ SQLite的檢視方式筆記（躺在Trello，待整理）
 `serializers.py`
 
 ```python
-
 # serializers跟models在同層所以我這樣寫而已
-
 from models import User #我只撿了model裡面的一個小傢伙User
-
 from rest_framework import serializers
-
-
-
-
-
 class UserSerializer(serializers.ModelSerializer):
-
      class Meta:
-
          model = User
-
          fields = '__all__'
-
 ```
 
 `view.py`跟`url`幾乎是拾人（第二篇教學的作者）
@@ -129,17 +92,13 @@ class UserSerializer(serializers.ModelSerializer):
 例如下方的代碼
 
 ```python
-
 from models import User
-
 ```
 
 它如果說沒有models
 
 ```python
-
 from myapp.models import User
-
 ```
 
 就指package給它..
@@ -147,17 +106,13 @@ from myapp.models import User
 又如下方的代碼
 
 ```python
-
 from FirstProject.myapp import views as user_view
-
 ```
 
 它如果說沒有FirstProject
 
 ```python
-
 from myapp import views as user_view
-
 ```
 
 直接同層給它..
