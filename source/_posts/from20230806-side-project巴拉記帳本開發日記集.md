@@ -1,4 +1,5 @@
 ---
+sticky: true
 title: From20230806 Side Project巴拉記帳本開發日記集
 date: 2023-08-06T19:49:55.971
 tag:
