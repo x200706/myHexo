@@ -42,6 +42,8 @@ categories:
             pass
     ```
   - 欄位的最小長度要用什麼敘述？ A：預設沒有這個敘述，[要自己擴寫](https://stackoverflow.com/questions/15845116/how-to-set-min-length-for-models-textfield)
+  - [Django不小心新增一個空字串作為PK 我無法使用管理後台刪除該筆資料](https://chat.openai.com/share/f8939787-a942-4e02-a4d1-eeccb4ce9507)
+  
 ##### 序列化器出來的東西跟我想的不一樣
 ~~DRF初學者寫Join要命rrr~~
 
