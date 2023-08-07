@@ -35,4 +35,4 @@ git rebase -i 編號
 
 [跟ChatGPT亂七八糟的問答Orz|||](https://chat.openai.com/share/902a7302-bd2e-43ff-bc21-b9284b1c6fb0)
 
-基礎觀念太差，[應該好好學](https://backlog.com/git-tutorial/tw/stepup/stepup2_8.html)
+基礎觀念太差，[應該好好學](https://backlog.com/git-tutorial/tw/stepup/stepup2_8.html) [2](https://github.com/geeeeeeeeek/git-recipes/wiki/5.1-%E4%BB%A3%E7%A0%81%E5%90%88%E5%B9%B6%EF%BC%9AMerge%E3%80%81Rebase-%E7%9A%84%E9%80%89%E6%8B%A9)
