@@ -26,7 +26,7 @@ git rebase -i 編號
 # 進入第一個reword
 # 修改commit esc->:wq存檔離開
 ```
-但不知為何發生了問題（類似[如此](https://stackoverflow.com/questions/31069316/error-with-git-rebase-could-not-apply)），所以我暫時是下載了[Sourcetree](https://www.sourcetreeapp.com/)，之後再到模擬環境好好練習`git rebase``~_~`
+但不知為何發生了問題（類似[如此](https://stackoverflow.com/questions/31069316/error-with-git-rebase-could-not-apply)），所以我暫時是下載了[Sourcetree](https://www.sourcetreeapp.com/)，之後再到模擬環境好好練習`git rebase` `~_~`
 
 >補充：如果有rebase不想做了，checkout回main分支，如果是Windows，終端機鍵入`rmdir .git/rebase`（Linux可看[這篇](https://stackoverflow.com/questions/34496834/how-do-i-remove-an-old-rebase)，基本上在已經有其他rebase的狀況下輸入`git rebase -i 編號`它也會提醒你一樣的事情）
 
