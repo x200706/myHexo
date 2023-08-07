@@ -34,3 +34,5 @@ git rebase -i 編號
 不過我用Sourcetree也是拋差不多的錯誤，可能第一次下`git commit --amend -m "想改的訊息"`又順便修改東西一起commit&push，中間可能發生甚麼事情導致現在的局面...之後來好好解...
 
 [跟ChatGPT亂七八糟的問答Orz|||](https://chat.openai.com/share/902a7302-bd2e-43ff-bc21-b9284b1c6fb0)
+
+基礎觀念太差，[應該好好學](https://backlog.com/git-tutorial/tw/stepup/stepup2_8.html)
