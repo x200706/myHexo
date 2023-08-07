@@ -72,9 +72,5 @@ valine:
 reward:
   # If true, reward will be displayed in every article by default.
   enable: false
-# audio:
-#   - name: "【"
-#     url: ""
-#     artist: ""
-#     cover: ""
-#     lrc: ""
+audio:
+  - https://music.163.com/song?id=1399645422
