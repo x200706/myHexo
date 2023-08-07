@@ -26,7 +26,7 @@ categories:
 - 遇到的問題
   - [no such table...記得異動資料庫後要下後續的兩條指令=_=](https://blog.csdn.net/qq_33654685/article/details/88573873)
   - 日期可以傳入20230806欸0.0...
-  - ResTool傳入值跟適用情境不夠，之後要改
+  - ⭐ResTool傳入值跟適用情境不夠，之後要改
   - [關於DRF的後台](https://stackoverflow.com/questions/63652653/does-the-django-rest-framework-provide-an-admin-site-to-manage-models)
     - [Models沒有顯示是因為沒有註冊](https://stackoverflow.com/questions/2984987/model-not-showing-up-in-django-admin)->[註冊自動化](https://hackernoon.com/automatically-register-all-models-in-django-admin-django-tips-481382cf75e5)
     - 統整下來在app下方的`admin.py`加入以下：
@@ -43,12 +43,18 @@ categories:
             pass
     ```
   - 欄位的最小長度要用什麼敘述？ A：預設沒有這個敘述，[要自己擴寫](https://stackoverflow.com/questions/15845116/how-to-set-min-length-for-models-textfield)
-  - [Django不小心新增一個空字串作為PK 我無法使用管理後台刪除該筆資料](https://chat.openai.com/share/f8939787-a942-4e02-a4d1-eeccb4ce9507)
-  
-##### 序列化器出來的東西跟我想的不一樣
-~~DRF初學者寫Join要命rrr~~
+  - ⭐[Django不小心新增一個空字串作為PK 我無法使用管理後台刪除該筆資料](https://chat.openai.com/share/f8939787-a942-4e02-a4d1-eeccb4ce9507)
+    - 朋友解釋是因為Python的Dict不能以空字串作為key，所以對Python來說**沒有這個東西**，自然也就**刪除不到**
+      - 猜測用delete方法的接口效果也一樣（中間也過序列化器，應該也涉及Python資料結構），討論完的結論就是...大大用Chrome打開SQLite刪吧囧
+      - 請做好空字串防止！！
+  - 序列化器出來的東西跟我想的不一樣 ~~DRF初學者寫Join要命rrr~~->明天來做點釐清...
 
-明天來做點釐清...
-
-
+***
+### 20230807 Day02
+#### 前端進度
+- 暫無
+- 組件趕快整理出來才能讓小夥伴幫忙r >_<
+#### 後端進度
+- 研究DRF序列化器
+- 代碼整理
 
