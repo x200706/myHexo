@@ -14,6 +14,7 @@ categories:
 ```shell
 git commit --amend -m "想改的訊息"
 ```
+失敗的原因：[沒有強制推送](https://blog.csdn.net/AlexAoMin/article/details/51244486)
 - 修改更早之前的，要用[rebase](https://gitbook.tw/chapters/rewrite-history/change-commit-message)
   - 我的嘗試：
 ```shell
