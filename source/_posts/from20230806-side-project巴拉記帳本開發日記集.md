@@ -57,4 +57,25 @@ categories:
 #### 後端進度
 - 研究DRF序列化器
 - 代碼整理
-
+  - 重新設計ResTool
+  注意：原生Python[沒有多載](https://www.uj5u.com/houduan/288561.html)，方法簽章相同時，後面method覆蓋前面method
+  ```py
+  from django.http import JsonResponse
+  class ResponseTool():
+    def success_json_res(data):
+        response_data = {
+            "code": "SUCCESS",
+            "message": "成功",
+            "data": data
+        }
+        return JsonResponse(response_data, safe=False)
+    
+    def exception_json_res(Exception):
+        response_data = {
+            "code": "SOME_EXCEPTION",
+            "message": str(Exception),
+            "data": {}
+        }
+        return JsonResponse(response_data, safe=False)
+  ```
+    - 補充：[save參數的意義](https://dev.to/chryzcode/django-json-response-safe-false-4f9i)
