@@ -11,8 +11,8 @@ tag:
   - Django Model Field
 updated: 2023-08-06T19:49:55.979
 categories:
-  - Django
-  - Vue
+  - [Django]
+  - [Vue]
 ---
 ### 20230806 Day01
 > 其實之前就在寫了，但因為各種事情 ~~還有分心~~暫時停擺了，最近閒賦在家當然要趕快重新開始！！那就以重新開始這天稱為第一天吧！

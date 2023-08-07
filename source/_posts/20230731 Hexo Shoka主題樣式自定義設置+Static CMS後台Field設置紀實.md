@@ -1,5 +1,5 @@
 ---
-title: 20230802 Hexo Shoka主題安裝、留言及搜尋功能配置紀實
+title: 20230731 Hexo Shoka主題樣式自定義設置+Static CMS後台Field設置紀實
 date: 2023-08-02T13:03:00.000+08:00
 updated: 
 tag: 
