@@ -14,6 +14,11 @@ categories:
   - [Django]
   - [Vue]
 ---
+- [巴拉記帳本的後端源碼](https://github.com/x200706/BlahAccountBookAP)
+- [巴拉記帳本的前端源碼](https://github.com/x200706/BlahAccountBook)
+- [巴拉記帳本的前台畫面](https://blahaccountbook.chi200706.repl.co/)
+  - 因為是用Replit架的，所以太久沒人連線前端或後端API可能會睡著`-.-`，之後完成後這個side project後再考慮弄個程式定期叫醒
+
 ### 20230806 Day01
 > 其實之前就在寫了，但因為各種事情 ~~還有分心~~暫時停擺了，最近閒賦在家當然要趕快重新開始！！那就以重新開始這天稱為第一天吧！
 
