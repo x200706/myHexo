@@ -9,7 +9,7 @@ tag:
   - Django Admin
   - DRF Serializer
   - Django Model Field
-updated: 2023-08-06T19:49:55.979
+updated: 2023-08-08T19:49:55.979
 categories:
   - [Django]
   - [Vue]
@@ -84,3 +84,11 @@ categories:
         return JsonResponse(response_data, safe=False)
   ```
     - 補充：[save參數的意義](https://dev.to/chryzcode/django-json-response-safe-false-4f9i)
+
+***
+### 20230808 Day03
+#### 前端進度
+- 無
+- 確認Axios可以用[put method](https://rapidapi.com/guides/use-axios-put-patch-requests)
+#### 後端進度
+- QuerySet研習，還借了書。
