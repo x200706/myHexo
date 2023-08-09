@@ -91,4 +91,11 @@ categories:
 - 無
 - 確認Axios可以用[put method](https://rapidapi.com/guides/use-axios-put-patch-requests)
 #### 後端進度
-- QuerySet研習，還借了書。
+- 研習QuerySet，還借了書。
+
+***
+### 20230809 Day04
+#### 前端進度
+- 無
+#### 後端進度
+- 研習kwargs、網址傳參
