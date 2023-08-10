@@ -111,9 +111,11 @@ categories:
 今天遇到的問題，主要發生在查全部記帳不傳入參數：（貌似是昨天就寫出來的問題，但沒測到就收工了）
 1. TypeError:缺少必要參數
   >...missing 1 required positional argument: 'id'
+
   似乎是類似[這樣](https://stackoverflow.com/questions/69173337/i-have-this-error-delete-missing-1-required-positional-argument-id-when-i-c)的問題，後來改寫法後是沒遇到了
 2. 查不到東西？？
   >myapp.models.Account.DoesNotExist: Account matching query does not exist.
+  
   我想了一下它似乎進到if裡了，但又是空的，所以查不到東西
   
   後來我印一印得知不傳參數，那個參數會是`None`，寫法用是否為空字串判斷當然是❌❌
