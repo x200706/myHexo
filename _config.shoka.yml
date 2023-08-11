@@ -55,8 +55,6 @@ valine:
   NoRecordIP: false # 不记录 IP
   serverURLs: https://sxmmhyii.api.lncldglobal.com
   powerMode: true # 默认打开评论框输入特效
-  avatarCDN: https://cdn.v2ex.com/gravatar/
-  avatarUrl: https://cdn.v2ex.com/gravatar/
   tagMeta:
     visitor: 訪客
     master: 站長
