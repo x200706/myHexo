@@ -1,5 +1,5 @@
 ---
-title: 20230808 Django QuerySet相關
+title: 20230808 Django QuerySet相關+增刪查改參考文
 date: 2023-08-08T08:16:55.971
 tag:
   - Django
