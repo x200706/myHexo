@@ -131,4 +131,8 @@ categories:
 #### 前端進度
 - 無
 #### 後端進度
-- API規劃與虛擬碼撰寫
+- API代碼規劃與撰寫
+  - 修改記帳：`def put(self, request,*args, **kwargs)`
+  - 刪除記帳：`def delete(self, request,*args, **kwargs)`
+  - 修改分類：基於關聯安全考量加上暫時沒配套措施，我只讓它修改中文desc
+  - 刪除分類：暫無，因為有關聯，給使用者單純刪可危險了，需要研擬配套措施
