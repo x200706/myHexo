@@ -136,3 +136,4 @@ categories:
   - 刪除記帳：`def delete(self, request,*args, **kwargs)`
   - 修改分類：基於關聯安全考量加上暫時沒配套措施，我只讓它修改中文desc
   - 刪除分類：暫無，因為有關聯，給使用者單純刪可危險了，需要研擬配套措施
+- 已知使用[Python的TODO](https://tw-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python_style_rules.html)
