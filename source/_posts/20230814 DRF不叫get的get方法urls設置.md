@@ -61,3 +61,5 @@ class CanvaView(GenericAPIView):
   - 姆姆姆...好像用[ViewSet](https://blog.csdn.net/weixin_43661701/article/details/111880470)寫更漂亮..而且它本來就是讓人指定傳參的
   - 沒有類的世界，[直接調用def](https://zhuanlan.zhihu.com/p/35348643)，上方stackoverflow也有人提出這種解答
 - [Django Rest FrameWork基礎筆記](https://hackmd.io/@_FqBW8dGS8a5ZqhdMwvpuA/H1gZmMGzv)
+
+唉，沒頭沒腦 錯中學
