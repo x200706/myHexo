@@ -138,3 +138,15 @@ categories:
   - 刪除分類：暫無，因為有關聯，給使用者單純刪可危險了，需要研擬配套措施
   - 額...之後查詢類的API怎麼取名才顯得RESTful，去取材吧...
 - 已知使用[Python的TODO](https://tw-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python_style_rules.html)
+
+***
+### 20230812 Day07
+### 20230813 Day08
+#### 前端進度
+- 無
+#### 後端進度
+- RESTful API命名考究
+
+***
+### 20230814 Day09
+- 圖表接口安排
