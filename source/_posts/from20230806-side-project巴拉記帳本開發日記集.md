@@ -145,7 +145,7 @@ categories:
 #### 前端進度
 - 無
 #### 後端進度
-- RESTful API命名考究
+- RESTful API命名考究，閱讀文章[1](https://www.ibm.com/docs/zh-tw/urbancode-build/6.1.3?topic=reference-rest-api-conventions) [2](https://www.gushiciku.cn/pl/grIf/zh-tw) [3](https://www.jianshu.com/p/3374882b19a2)
 
 ***
 ### 20230814 Day09
