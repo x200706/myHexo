@@ -160,3 +160,6 @@ categories:
 - 無
 #### 後端進度
 - Queryset與運算
+  - [遍歷與效能](https://stackoverflow.com/questions/44066026/should-i-iterate-on-django-query-set-or-over-the-variable)
+- 要做針對帳目的計算時才發現之前根本沒有記錄金錢的欄位（狂汗），給它補上
+  - 如果sqlite已經存在多筆資料，在model沒給預設值的狀況，執行`python manage.py makemigrations`，它會問你要(1)現在給那些既有資料一個值；還是(2)在model定義預設值
