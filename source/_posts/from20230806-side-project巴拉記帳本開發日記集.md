@@ -162,6 +162,8 @@ categories:
 - Queryset與運算
   - [遍歷與效能](https://stackoverflow.com/questions/44066026/should-i-iterate-on-django-query-set-or-over-the-variable)
   - 使用[串列](https://wenyuangg.github.io/posts/python3/python-list.html)快速做數學運算吧
+  - [dict存放資料](https://www.digitalocean.com/community/tutorials/python-add-to-dictionary)
+  - [日期運算參考](https://blog.51cto.com/u_15249893/2848146)
 - 要做針對帳目的計算時才發現之前根本沒有記錄金錢的欄位（狂汗），給它補上
   - 如果sqlite已經存在多筆資料，在model沒給預設值的狀況，執行`python manage.py makemigrations`，它會問你要(1)現在給那些既有資料一個值；還是(2)在model定義預設值
   - 這個欄位需要做資料防護，必須>=0，因為原先設計views.py程式中是用io欄位的INPUT/OUTPUT去決定最終正負號
