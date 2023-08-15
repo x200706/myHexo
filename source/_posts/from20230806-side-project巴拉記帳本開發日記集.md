@@ -165,3 +165,4 @@ categories:
 - 要做針對帳目的計算時才發現之前根本沒有記錄金錢的欄位（狂汗），給它補上
   - 如果sqlite已經存在多筆資料，在model沒給預設值的狀況，執行`python manage.py makemigrations`，它會問你要(1)現在給那些既有資料一個值；還是(2)在model定義預設值
   - 這個欄位需要做資料防護，必須>=0，因為原先設計views.py程式中是用io欄位的INPUT/OUTPUT去決定最終正負號
+- [神秘錯誤一則](https://stackoverflow.com/questions/32121804/django-rest-framework-attributeerror-when-serializer-many-false-but-not-when-m)
