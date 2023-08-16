@@ -167,3 +167,13 @@ categories:
   - 如果sqlite已經存在多筆資料，在model沒給預設值的狀況，執行`python manage.py makemigrations`，它會問你要(1)現在給那些既有資料一個值；還是(2)在model定義預設值
   - 這個欄位需要做資料防護，必須>=0，因為原先設計views.py程式中是用io欄位的INPUT/OUTPUT去決定最終正負號
 - [神秘錯誤一則](https://stackoverflow.com/questions/32121804/django-rest-framework-attributeerror-when-serializer-many-false-but-not-when-m)
+
+***
+### 20230816 Day11
+#### 前端進度
+- 稍微想像了下串接..
+- 在本機clone了專案
+#### 後端進度
+- 完成最後一支API
+- 單引雙引的差別複習
+- 閱讀[1](https://learnku.com/docs/python-learning/serializer-serializer/10886)
