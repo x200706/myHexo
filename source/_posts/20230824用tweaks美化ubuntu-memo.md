@@ -22,11 +22,12 @@ categories:
 ### 重點整理
 
 - Tweaks更換主題的方法：家目錄加一個`.home`資料夾（記得打開顯示隱藏檔案的選項），把下載下來的主題解壓縮後放到裡面，打開Tweak進行更換
+- 如果是icon新版比較繁瑣，這邊的例子是我誤以為可以跟以前一樣放在.icon資料夾，結果無效，要參考[這篇]([https://askubuntu.com/questions/1385810/downloaded-icons-not-showing-in-the-tweaks-in-ubuntu-21-10](https://askubuntu.com/questions/1385810/downloaded-icons-not-showing-in-the-tweaks-in-ubuntu-21-10))搬到`/usr/share/icons`的情景：
+
+```shell
+x200706@ubuntu:~/.icon$ sudo cp -r Tela-purple/ /usr/share/icons
+```
 
 ### 待考察
 
 - 類似xfce的工具列
-
-
-
-
