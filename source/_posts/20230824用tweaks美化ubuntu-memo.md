@@ -4,9 +4,10 @@ date: 2023-08-24T18:38:41.184+08:00
 tag:
   - Ubuntu
   - Tweak
+  - Linux
 updated: 2023-08-24T18:38:18.880
 categories:
-  - "[Ubuntu]"
+  - Ubuntu
 ---
 如昨天文章的狀況顯示—睽違一陣子又來用Ubuntu啦
 
@@ -31,7 +32,3 @@ x200706@ubuntu:~/.icon$ sudo cp -r Tela-purple/ /usr/share/icons
 ### 待考察
 
 - 類似xfce的工具列
-
-
-
-
