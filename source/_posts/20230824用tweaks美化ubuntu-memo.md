@@ -35,6 +35,12 @@ x200706@ubuntu:~/.icon$ sudo cp -r Tela-purple/ /usr/share/icons
 sudo apt install gnome-shell-extensions
 ```
 
+然後先到擴充元件打開User Themes的項目，重開Tweaks才能選主題，至於左邊那個可選檔案的欄位，我還在摸索那是啥囧...
+
+終端機配色方案似乎可以透過類似[這樣](https://github.com/Gogh-Co/Gogh)的方式解決
+
+### 待考察
+
 - 類似xfce的工具列
 
 
