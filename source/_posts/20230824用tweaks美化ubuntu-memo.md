@@ -5,7 +5,7 @@ tag:
   - Ubuntu
   - Tweak
   - Linux
-updated: 2023-08-24T18:38:18.880
+updated: 2023-08-24T21:29:18.456+08:00
 categories:
   - Ubuntu
 ---
@@ -17,18 +17,26 @@ categories:
 
 ### 參考資料
 
-- [Ubuntu 更改桌面主題 Gnome, Theme, Tweak]([https://ubuntu1804.blogspot.com/2019/06/ubuntu-gnome-theme-tweak.html](https://ubuntu1804.blogspot.com/2019/06/ubuntu-gnome-theme-tweak.html))
-- [很多GTK主題的網站]([https://www.pling.com/p/1309218/](https://www.pling.com/p/1309218/))
+- [Ubuntu 更改桌面主題 Gnome, Theme, Tweak](https://ubuntu1804.blogspot.com/2019/06/ubuntu-gnome-theme-tweak.html)
+- [很多GTK主題的網站](https://www.pling.com/p/1309218/)
 
 ### 重點整理
 
 - Tweaks更換主題的方法：家目錄加一個`.home`資料夾（記得打開顯示隱藏檔案的選項），把下載下來的主題解壓縮後放到裡面，打開Tweak進行更換
-- 如果是icon新版比較繁瑣，這邊的例子是我誤以為可以跟以前一樣放在.icon資料夾，結果無效，要參考[這篇]([https://askubuntu.com/questions/1385810/downloaded-icons-not-showing-in-the-tweaks-in-ubuntu-21-10](https://askubuntu.com/questions/1385810/downloaded-icons-not-showing-in-the-tweaks-in-ubuntu-21-10))搬到`/usr/share/icons`的情景：（[玩壞了請服用]([https://askubuntu.com/questions/1474445/help-i-changed-my-icons-with-tweaks-now-nothing-works](https://askubuntu.com/questions/1474445/help-i-changed-my-icons-with-tweaks-now-nothing-works))）
+- 如果是icon新版比較繁瑣，這邊的例子是我誤以為可以跟以前一樣放在.icon資料夾，結果無效，要參考[這篇](https://askubuntu.com/questions/1385810/downloaded-icons-not-showing-in-the-tweaks-in-ubuntu-21-10)搬到`/usr/share/icons`的情景：（[玩壞了請服用](https://askubuntu.com/questions/1474445/help-i-changed-my-icons-with-tweaks-now-nothing-works)）
 
 ```shell
 x200706@ubuntu:~/.icon$ sudo cp -r Tela-purple/ /usr/share/icons
 ```
 
-### 待考察
+- 終端機的部份需要先
+
+```shell
+sudo apt install gnome-shell-extensions
+```
 
 - 類似xfce的工具列
+
+
+
+
