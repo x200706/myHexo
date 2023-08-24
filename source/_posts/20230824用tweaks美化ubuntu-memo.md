@@ -18,6 +18,7 @@ categories:
 ### 參考資料
 
 - [Ubuntu 更改桌面主題 Gnome, Theme, Tweak](https://ubuntu1804.blogspot.com/2019/06/ubuntu-gnome-theme-tweak.html)
+  - 工具列換位置也能參考這篇
 - [很多GTK主題的網站](https://www.pling.com/p/1309218/)
 
 ### 重點整理
@@ -38,11 +39,3 @@ sudo apt install gnome-shell-extensions
 然後先到擴充元件打開User Themes的項目，重開Tweaks才能選主題，至於左邊那個可選檔案的欄位，我還在摸索那是啥囧...
 
 終端機配色方案似乎可以透過類似[這樣](https://github.com/Gogh-Co/Gogh)的方式解決
-
-### 待考察
-
-- 類似xfce的工具列
-
-
-
-
